@@ -12,7 +12,7 @@ public class AppUserRoleRepositoryImpl implements AppUserRoleRepository {
 
     private static final String DB_URL = "jdbc:postgresql://localhost:5432/test_db4";
     private static final String DB_USER = "postgres";
-    private static final String DB_PASSWORD = "postgres";
+    private static final String DB_PASSWORD = "Gamburger";
 
     static {
         try {

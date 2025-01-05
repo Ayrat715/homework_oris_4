@@ -12,7 +12,7 @@ public class PropertyRepositoryImpl implements PropertyRepository {
 
     private static final String DB_URL = "jdbc:postgresql://localhost:5432/test_db4";
     private static final String DB_USER = "postgres";
-    private static final String DB_PASSWORD = "postgres";
+    private static final String DB_PASSWORD = "Gamburger";
 
     static {
         try {
@@ -147,7 +147,7 @@ public class PropertyRepositoryImpl implements PropertyRepository {
     }
 
 
-    // вспомогательный метод: мэп ResultSet -> Property
+    // вспомогательный метод: мэп ResultSet -> Property (преобразует строку в объект)
     private Property mapRowToProperty(ResultSet rs) throws SQLException {
         Property property = new Property();
         property.setId(rs.getInt("id"));
